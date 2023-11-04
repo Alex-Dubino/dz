@@ -1,0 +1,118 @@
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 50px;
+  .blue,
+  .red,
+  .green,
+  .black {
+    display: flex;
+    flex-direction: column;
+    .card-head {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 30px;
+      color: white;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 30px 15px;
+      .span {
+        position: absolute;
+        margin-right: 115px;
+        font-size: 14px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .card-body-item {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+
+        span {
+          font-size: 14px;
+          margin-bottom: 5px;
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        h4 {
+          font-size: 36px;
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+    }
+    .card-subbody {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px 30px;
+      background-color: rgba(212, 212, 212, 0.3);
+      span {
+        z-index: 5;
+        color: black;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+    .card-footer {
+      background-color: rgba(212, 212, 212);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 2px;
+      padding: 30px 30px;
+      span {
+        z-index: 5;
+        color: black;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.7s;
+    }
+  }
+  .green {
+    .card-head {
+      background-color: rgb(8, 99, 55);
+    }
+    .card-body {
+      background-color: rgb(7, 152, 82);
+    }
+  }
+  .blue {
+    .card-head {
+      background-color: rgb(76, 152, 162);
+    }
+    .card-body {
+      background-color: rgb(102, 210, 224);
+    }
+  }
+  .black {
+    .card-head {
+      background-color: rgb(21, 21, 21);
+    }
+    .card-body {
+      background-color: rgb(43, 43, 43);
+    }
+  }
+  .red {
+    .card-head {
+      background-color: rgb(122, 8, 8);
+    }
+    .card-body {
+      background-color: rgb(179, 5, 5);
+    }
+  }
+}
